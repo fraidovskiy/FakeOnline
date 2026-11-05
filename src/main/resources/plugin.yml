@@ -2,15 +2,12 @@ name: FakeOnline
 version: 1.0.0
 main: ru.fakeonline.FakeOnline
 api-version: '1.21'
-depend: [Citizens]
+softdepend: [FakePlayerPlugin, FPP, FakePlayer]
 commands:
-  fakeonline:
-    description: Управление ботами
-    usage: /fakeonline reload
+  bots:
+    description: Количество ботов
+    usage: /bots [число|reload]
     permission: fakeonline.admin
 permissions:
   fakeonline.admin:
     default: op
-  fakeonline.immune:
-    description: Боты не бьют этого игрока
-    default: false
